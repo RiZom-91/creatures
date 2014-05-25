@@ -1,5 +1,10 @@
 creatures = {}
 
+-- Max number of mobs per mapblock
+creatures.zombie_max = 3--2
+creatures.ghost_max = 1
+creatures.sheep_max = 4--2
+
 creatures.ANIM_STAND = 1
 creatures.ANIM_SIT = 2
 creatures.ANIM_LAY = 3
@@ -16,7 +21,7 @@ end
 
 -- spawning controls (experimental)
 creatures.spawned = {}
-local spawn_day = 600
+local spawn_day = 6--00
 local tod = 0
 local absolute_mob_max = 50
 
