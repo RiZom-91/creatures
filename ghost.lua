@@ -118,7 +118,10 @@ end
 
 GHOST_DEF.on_step = function(self, dtime)
 	if self.dead then return end
-	self.timer = self.timer + 0.01
+	self.timer = self.timer + dtime
+	if self.timer < 0.1 then
+		return
+	end
 	self.turn_timer = self.turn_timer + 0.01
 	self.jump_timer = self.jump_timer + 0.01
 	self.punch_timer = self.punch_timer + 0.01
