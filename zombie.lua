@@ -254,6 +254,7 @@ ZOMBIE_DEF.on_step = function(self, dtime)
 				self.yaw = self.yaw - 2
 				self.object:setyaw(self.yaw)
 				self.attacker = object
+				self.lifetime = 0
 			end
 		end
 
